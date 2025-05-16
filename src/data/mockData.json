@@ -1,0 +1,31 @@
+{
+  "user": {
+    "name": "Ankit Singh",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvdQGPetWvEgvQ6xMZlKse_vcmAas8LFo3gA&s"
+  },
+  "overview": {
+    "totalBalance": 12345.67,
+    "monthlyIncome": 7890.12,
+    "monthlyExpenses": 3456.78,
+    "savingsRatio": 56
+  },
+  "transactions": [
+    { "date": "2025-06-26", "description": "Paycheck", "type": "Credit", "category": "Income", "amount": 2500 },
+    { "date": "2025-06-25", "description": "Rent", "type": "Debit", "category": "Housing", "amount": -1500 },
+    { "date": "2025-06-24", "description": "Groceries", "type": "Debit", "category": "Food", "amount": -65 },
+    { "date": "2025-06-23", "description": "Dinner", "type": "Debit", "category": "Food", "amount": -30 },
+    { "date": "2025-06-22", "description": "Gas", "type": "Debit", "category": "Transport", "amount": -40 },
+    { "date": "2025-06-21", "description": "Freelance", "type": "Credit", "category": "Income", "amount": 300 },
+    { "date": "2025-06-20", "description": "Amazon", "type": "Debit", "category": "Shopping", "amount": -50 },
+    { "date": "2025-06-19", "description": "Coffee", "type": "Debit", "category": "Food", "amount": -5 },
+    { "date": "2025-06-18", "description": "Lunch", "type": "Debit", "category": "Food", "amount": -15 },
+    { "date": "2025-06-17", "description": "Refund", "type": "Credit", "category": "Income", "amount": 100 }
+  ],
+  "categories": {
+    "Food": 300,
+    "Transport": 150,
+    "Shopping": 400,
+    "Health": 100,
+    "Entertainment": 80
+  }
+}
