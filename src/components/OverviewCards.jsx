@@ -7,7 +7,7 @@ const OverviewCards = ({ overview }) => {
       value: `₹${overview.totalBalance.toLocaleString()}`,
     },
     {
-      label: "Monthly Income",
+      label: "Monthly Saving",
       value: `₹${overview.monthlyIncome.toLocaleString()}`,
     },
     {
