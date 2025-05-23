@@ -1,31 +1,24 @@
+// File: src/components/Header.jsx
 import React from "react";
 
 const Header = ({ name, avatar, savingsRatio }) => {
   return (
-    <header className="flex justify-between items-center p-4 bg-white dark:bg-gray-800 shadow rounded-md mb-6">
-      <div>
-        <h1 className="text-2xl font-semibold">Good evening, {name}</h1>
-        <div className="mt-2 w-full max-w-xs">
+    <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-6">
+      <div className="flex items-center space-x-4">
+        <img
+          src={avatar}
+          alt="User"
+          className="w-12 h-12 rounded-full object-cover"
+        />
+        <div>
+          <p className="text-lg font-semibold">Welcome, {name} 👋</p>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            Monthly Savings Goal
-          </p>
-          <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 mt-1">
-            <div
-              className="bg-green-500 h-3 rounded-full transition-all"
-              style={{ width: `${savingsRatio}%` }}
-            />
-          </div>
-          <p className="text-xs text-right text-gray-500 dark:text-gray-400 mt-1">
-            {savingsRatio}% saved
+            Your savings ratio this month is{" "}
+            <span className="font-medium">{savingsRatio}%</span>
           </p>
         </div>
       </div>
-      <img
-        src={avatar}
-        alt="User Avatar"
-        className="w-20 h-20 rounded-full border border-gray-300 dark:border-gray-600"
-      />
-    </header>
+    </div>
   );
 };
 
